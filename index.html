@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1950/1950715.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="todo-Main" id="todo-Main">
+        <div class="logout">
+            <button onclick="logout(this)">Logout</button>
+        </div>
+        <div class="edit">
+            <div class="heading">
+            <h1>Todo List</h1>
+        </div>
+      <div class="Todo">
+        <i id="todo-i" class="fa-solid fa-bag-shopping"></i>
+        <input type="text" class="todo-inp" id="user-value">
+        <button onclick="add(this)" class="todo-btn">Add</button>
+      </div>
+      <div class="todo-data-main" id="todo-data-main">   
+      </div>
+    
+        </div>
+    </div>
+    
+    <div class="Login-Main" id="Login-Main">
+        
+      <div class="heading">
+          <h1>LOGIN</h1>
+      </div>
+      <div class="inputs">
+          <div class="email">
+              <i class="fa-solid fa-envelope" ></i>
+              <input id="email" type="email" placeholder="Enter Email">
+          </div>
+          <div class="pass">
+              <i class="fa-solid fa-lock"></i>
+              <input id="password" type="password" placeholder="Enter Password">
+          </div>
+          <div class="register">
+              <span onclick="register()">Register ?</span>
+          </div>
+          <div class="btn">
+              <button onclick="login()">Login</button>
+          </div>
+      </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

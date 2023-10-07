@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1950/1950715.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="Login-Main">
+        <div class="heading">
+            <h1>REGISTER</h1>
+        </div>
+        <div class="inputs">
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <input id="userName" type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-envelope" ></i>
+                <input id="email" type="email" placeholder="Enter Email">
+            </div>
+            <div class="pass">
+                <i class="fa-solid fa-lock"></i>
+                <input id="password" type="password" placeholder="Enter Password">
+            </div>
+            <div class="register">
+                <span onclick="Login()">Login ?</span>
+            </div>
+            <div class="btn">
+                <button onclick="register()">Register</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

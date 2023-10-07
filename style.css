@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Login-Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #193461;
+}
+body{
+    background-color: #193461;
+    overflow-x: hidden;
+    
+}
+.todo-Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #193461;
+    display: none;
+    position: relative;
+}
+.logout{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 40px;
+}
+.edit{
+    text-align: center;
+    margin-top: 15vh;
+}
+.email,.pass ,.Todo {
+    width: 40vw;
+    height: 30px;
+    position: relative;
+    margin: 20px 0px;
+}
+h1{
+    color:skyblue ;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom:2px solid skyblue ;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background-color: transparent;
+    color: white;
+}
+i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:rgb(93, 196, 236);
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border:2px solid skyblue;
+    outline: none;
+ color: skyblue;
+ background-color: transparent;
+ cursor: pointer;
+ border-radius: 5px;
+
+}
+.register{
+position: relative;
+width: 40vw;
+}
+span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+right: 0px;
+color: white;
+cursor: pointer;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.822);
+}
+@media screen and (max-width:664px) {
+    .email,.pass ,.Todo{
+        width: 80vw;
+    }
+    .register{
+        width: 80vw;
+        }
+        #todo-data-main{
+            width: 80vw;
+            
+        }
+}
+
+.Todo{
+    display: flex;
+    position: relative;
+}
+.todo-inp{
+    margin: 0px 10px;
+}
+.todo-btn{
+    padding: 5px;
+    width: 80px;
+}
+#todo-i{
+left: 10px;
+}
+.todo-data-main{
+    width: 40vw;
+    height: 30px;
+    position: relative;
+}
+.todo-data{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    position: relative;
+    background-color: skyblue;
+    color: #193461;
+    border-radius: 5px;
+}
+li{
+    margin-left: 10px;
+    list-style: none;
+    font-weight: 800;
+    font-family:'Courier New', Courier, monospace;
+}
+#todo-i-c{
+right: 5px;
+color: #193461;
+cursor: pointer;
+}
